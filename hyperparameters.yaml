@@ -1,0 +1,29 @@
+envs:
+  env_name: [
+    "small",
+  ]
+
+#DQN:
+#  lr: 0.001
+#  buffer_size: 10000
+#  batch_size: 512
+#  gamma: 0.99
+#  target_update_interval: 10 # parameters update interval
+#  exploration_fraction: 0.1
+#  exploration_initial_eps: 1.0
+#  experiment_dir: "model/"
+#  exploration_final_eps: 0.05
+#  layers: [256,256,256,256]
+DQN:
+  lr: 0.001
+  buffer_size: 10000
+  batch_size: 128
+  gamma: 0.99
+  target_update_freq: 10
+  exploration_fraction: 0.05
+  exploration_initial_eps: 0.9
+  exploration_final_eps: 0.05
+  experiment_dir: "model/"
+  tensorboard_log: "./test/"
+  episodes: 5000
+  layers: [64, 64]
